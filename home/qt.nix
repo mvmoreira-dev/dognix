@@ -12,4 +12,10 @@
       package = pkgs.kdePackages.breeze;
     };
   };
+
+  # Breeze Dark color scheme, read by Qt apps from kdeglobals
+  xdg.configFile."kdeglobals" = {
+    source = "${pkgs.kdePackages.breeze}/share/color-schemes/BreezeDark.colors";
+    force = true;
+  };
 }
