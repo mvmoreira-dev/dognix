@@ -8,7 +8,7 @@
     (discord.override {
       withVencord = true;
     })
-    #gearlever
+    # gearlever
     pciutils
     libreoffice
     easyeffects
@@ -65,6 +65,10 @@
     kdePackages.breeze.qt5
     kdePackages.breeze
     kdePackages.kate
+    kdePackages.ffmpegthumbs
+    kdePackages.kio-extras
+    ffmpegthumbnailer
+    ffmpeg-headless
   ];
 
   environment.pathsToLink = [ "/include" "/lib/pkgconfig" "/share/pkgconfig" ];

@@ -16,6 +16,7 @@
       "org.gtk.Gtk3theme.adw-gtk3-dark"
       "org.vinegarhq.Sober"
       "org.vinegarhq.Vinegar"
+      "it.mijorus.gearlever"
     ];
   };
 }

@@ -22,6 +22,7 @@
     ./modules/packages.nix
     ./modules/flatpak.nix
     ./modules/dev-modules.nix
+    ./modules/display-manager.nix
   ];
 
   # Do not change this after the first install.
