@@ -62,6 +62,8 @@
     kdePackages.dolphin
     kdePackages.kio-extras
     kdePackages.breeze-icons
+    kdePackages.breeze.qt5
+    kdePackages.breeze
     kdePackages.kate
   ];
 

@@ -1,17 +1,16 @@
 { pkgs, ... }:
 
 {
-  stylix.targets.qt.enable = true;
+  stylix.targets.qt.enable = false;
 
   # Qt apps use the Plasma platform theme with the Breeze style
-  #qt = {
-  #  enable = true;
-  #  platformTheme.name = "kde6";
-  #  style = {
-  #    name = "breeze";
-  #    package = pkgs.kdePackages.breeze;
-  #  };
-  #};
+  qt = {
+    enable = true;
+    platformTheme.name = "kde";
+    style = {
+      name = "breeze";
+    };
+  };
 
   ## Breeze Dark color scheme, read by Qt apps from kdeglobals
   #xdg.configFile."kdeglobals" = {
