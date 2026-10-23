@@ -8,6 +8,7 @@
     (discord.override {
       withVencord = true;
     })
+    fastfetch
     # gearlever
     pciutils
     libreoffice
