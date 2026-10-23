@@ -10,7 +10,7 @@
   stylix.targets.console.enable = false;
 
   # Stylix theme
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa-dragon.yaml";
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/classic-dark.yaml";
 
   # cursor
   stylix.cursor = {
