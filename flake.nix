@@ -22,6 +22,11 @@
     nix-flatpak = {
       url = "github:gmodena/nix-flatpak/?ref=latest";
     };
+
+    qylock = {
+      url = "github:Darkkal44/qylock";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -40,6 +45,7 @@
           inputs.stylix.nixosModules.stylix
           inputs.home-manager.nixosModules.home-manager
           inputs.nix-flatpak.nixosModules.nix-flatpak
+          inputs.qylock.nixosModules.default
 
           ./configuration.nix
         ];

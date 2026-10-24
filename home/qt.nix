@@ -2,6 +2,7 @@
 
 {
   stylix.targets.qt.enable = true;
+  home.sessionVariables.QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
 
   # Qt apps use the Plasma platform theme with the Breeze style
   #qt = {

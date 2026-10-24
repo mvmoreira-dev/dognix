@@ -48,6 +48,8 @@
     zapzap
     qalculate-gtk
     libqalculate
+    ffmpegthumbnailer
+    ffmpeg-headless
 
     # DEV
     git
@@ -68,8 +70,6 @@
     kdePackages.kate
     kdePackages.ffmpegthumbs
     kdePackages.kio-extras
-    ffmpegthumbnailer
-    ffmpeg-headless
   ];
 
   environment.pathsToLink = [ "/include" "/lib/pkgconfig" "/share/pkgconfig" ];
