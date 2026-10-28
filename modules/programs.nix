@@ -21,4 +21,16 @@
 
   # Gamemode
   programs.gamemode.enable = true;
+
+  # udisk2
+  services.udisks2.enable = true;
+  
+  #gvfs
+  services.gvfs.enable = true;
+  
+  #thunar
+  programs.thunar.enable = true;
+
+  # D-Bus power profile
+  services.power-profiles-daemon.enable = true;
 }

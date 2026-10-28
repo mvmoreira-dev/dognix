@@ -31,5 +31,15 @@ in
           "inode/directory" = "org.kde.dolphin.desktop";
         };
     };
+
+    desktopEntries = { 
+      "org.kde.dolphin" = {
+        name = "Dolphin";
+        exec = "env QT_STYLE_OVERRIDE=adwaita-dark dolphin %u";
+        icon = "org.kde.dolphin";
+        categories = [ "Qt" "KDE" "System" "FileTools" "FileManager" ];
+        mimeType = [ "inode/directory" ];
+      };
+    };
   };
 }

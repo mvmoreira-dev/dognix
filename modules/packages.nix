@@ -50,6 +50,7 @@
     libqalculate
     ffmpegthumbnailer
     ffmpeg-headless
+    prismlauncher
 
     # DEV
     git

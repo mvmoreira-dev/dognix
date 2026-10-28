@@ -26,7 +26,7 @@
 
   # Console colors
   console.colors = [
-    "2E3436"
+    "303030"
     "CC0000"
     "4E9A06"
     "C4A000"
