@@ -13,9 +13,8 @@
         CursorTheme = "Breeze_Light";
         CursorSize = 24;
       };
-      General.GreeterEnvironment = "XCURSOR_THEME=Breeze_Light,XCURSOR_SIZE=24,XCURSOR_PATH=/run/current-system/sw/share/icons";
+      General.GreeterEnvironment = "XCURSOR_THEME=Breeze_Light,XCURSOR_SIZE=24,XCURSOR_PATH=${pkgs.kdePackages.breeze}/share/icons";
     };
-
 
     extraPackages = with pkgs.kdePackages; [
       qtmultimedia
