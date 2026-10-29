@@ -12,6 +12,7 @@
     ./modules/locale.nix
     ./modules/desktop.nix
     ./modules/audio.nix
+    ./modules/audio-filters.nix
     ./modules/hardware.nix
     ./modules/graphics.nix
     ./modules/theming.nix

@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, pkgs, ... }:
 
 {
   # X11 / Wayland
@@ -8,6 +8,11 @@
     layout = "br";
     variant = "";
   };
+
+  services.xserver.displayManager.setupCommands = ''
+    echo "Xcursor.theme: Breeze_Light" | ${pkgs.xorg.xrdb}/bin/xrdb -merge
+    echo "Xcursor.size: 24" | ${pkgs.xorg.xrdb}/bin/xrdb -merge
+  '';
 
   # KDE Plasma
   #services.displayManager.defaultSession = lib.mkForce "plasma";

@@ -1,11 +1,28 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
+  # SERVICES 
+
   # Flatpak
   services.flatpak.enable = true;
 
   # upower
   services.upower.enable = true;
+
+  # Epson printer drivers
+  services.printing = {
+    enable = true;
+    drivers = [ pkgs.epson-escpr2 ];
+  };
+
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
+
+
+  # PROGRAMS
 
   # GPU Screen Recorder
   programs.gpu-screen-recorder = {
@@ -33,4 +50,7 @@
 
   # D-Bus power profile
   services.power-profiles-daemon.enable = true;
+
+  # programs.ssh.askPassword
+  programs.ssh.enableAskPassword = false;
 }

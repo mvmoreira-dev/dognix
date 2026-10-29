@@ -51,6 +51,7 @@
     ffmpegthumbnailer
     ffmpeg-headless
     prismlauncher
+    adwsteamgtk
 
     # DEV
     git
