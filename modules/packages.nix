@@ -52,10 +52,12 @@
     ffmpeg-headless
     prismlauncher
     adwsteamgtk
+    helix
 
     # DEV
     git
     gcc
+    cdecl
     binutils
     gnumake
     cmake
