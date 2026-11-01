@@ -64,6 +64,7 @@
     ninja
     meson
     pkg-config
+    python3
 
     # KDE Packages
     kdePackages.dolphin

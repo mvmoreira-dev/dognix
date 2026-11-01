@@ -24,6 +24,7 @@
     ./modules/flatpak.nix
     ./modules/dev-modules.nix
     ./modules/display-manager.nix
+    ./modules/python.nix
   ];
 
   # Do not change this after the first install.
