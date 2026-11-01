@@ -1,5 +1,10 @@
 { pkgs, inputs, ... }:
 
+let
+  python3 = import ./python.nix {
+    inherit pkgs;
+  };
+in
 {
   environment.systemPackages = with pkgs; [
     vim
