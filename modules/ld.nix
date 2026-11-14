@@ -6,13 +6,13 @@
 
     libraries = with pkgs; [
       # X11
-      xorg.libX11
-      xorg.libXcursor
-      xorg.libXrandr
-      xorg.libXinerama
-      xorg.libXi
-      xorg.libXext
-      xorg.libXfixes
+      libX11
+      libXcursor
+      libXrandr
+      libXinerama
+      libXi
+      libXext
+      libXfixes
 
       # XCB / Input
       libxcb
