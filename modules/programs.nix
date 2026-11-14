@@ -12,7 +12,11 @@
   # Epson printer drivers
   services.printing = {
     enable = true;
-    drivers = [ pkgs.epson-escpr2 ];
+    drivers = with pkgs; [
+      epson-escpr
+      epson-escpr2
+      gutenprint
+    ];
   };
 
   services.avahi = {
@@ -28,6 +32,22 @@
   programs.gpu-screen-recorder = {
     enable = true;
     ui.enable = true;
+  };
+
+  # yazi
+  programs.yazi = {
+    enable = true;
+
+    plugins = with pkgs.yaziPlugins; {
+      ouch = ouch;
+      git = git;
+      full-border = full-border;
+      smart-enter = smart-enter;
+      piper = piper;
+      rich-preview = rich-preview;
+      chmod = chmod;
+      mount = mount;
+    };
   };
 
   # OBS Studio

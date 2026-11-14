@@ -10,9 +10,13 @@ in
     vim
     vis
     wget
-    (discord.override {
-      withVencord = true;
-    })
+    pipewire
+    pulseaudio
+    alsa-lib
+    #(discord.override {
+    #  withVencord = true;
+    #})
+    vesktop
     fastfetch
     # gearlever
     pciutils
@@ -52,12 +56,13 @@ in
     netflix
     zapzap
     qalculate-gtk
-    libqalculate
     ffmpegthumbnailer
     ffmpeg-headless
     prismlauncher
     adwsteamgtk
     helix
+    lf
+    yazi
 
     # DEV
     git
@@ -69,13 +74,32 @@ in
     ninja
     meson
     pkg-config
+    jdk25
     python3
+
+    # LIBS
+    libpulseaudio
+    libqalculate
+    libxkbcommon
+    libxcb
+    readline
+    raylib
+    libGL
+    libGLU
+    libx11
+    libxcursor
+    libxrandr
+    libxinerama
+    libxi
+    libxext
+    libxfixes
 
     # KDE Packages
     kdePackages.dolphin
     kdePackages.kio-extras
     kdePackages.breeze-icons
     kdePackages.breeze.qt5
+    kdePackages.okular
     kdePackages.breeze
     kdePackages.kate
     kdePackages.ffmpegthumbs

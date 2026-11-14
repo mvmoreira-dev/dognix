@@ -2,13 +2,18 @@
 
 {
   # Sound with pipewire
-  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
+  services.pipewire.wireplumber.enable = true;
 
   services.pipewire = {
     enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
+
+    alsa = {
+      enable = true;
+      support32Bit = true;
+    };
+
     pulse.enable = true;
+    jack.enable = true;
   };
 }

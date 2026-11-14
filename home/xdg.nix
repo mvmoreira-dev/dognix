@@ -41,5 +41,11 @@ in
         mimeType = [ "inode/directory" ];
       };
     };
+
+    # yazi.toml
+    configFile."yazi/yazi.toml".text = ''
+      [mgr]
+      show_hidden = true
+    '';
   };
 }

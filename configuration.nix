@@ -24,9 +24,15 @@
     ./modules/flatpak.nix
     ./modules/dev-modules.nix
     ./modules/display-manager.nix
-    ./modules/python.nix
+    ./modules/ld.nix
   ];
 
+  # environment bin paths
+  environment.localBinInPath = true;
+  environment.sessionVariables.PATH = [
+    "/usr/local/bin"
+  ];
+  
   # Do not change this after the first install.
   system.stateVersion = "26.05";
 }
